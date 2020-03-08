@@ -7,12 +7,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: dimgray;
+  background: #0471A6;
   color: white;
 }
 
 .nav-links {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,8 +20,8 @@ nav {
 }
 
 .event-form {
-  max-width: 500px;
-  margin: 5em auto;
+  max-width: 600px;
+  margin-top: 1em;
 }
 
 .event-form, label {
@@ -32,7 +32,7 @@ nav {
 .event-form > input, textarea {
   width: 100%;
   border: 1px solid #898989;
-  border-radius: 4px;
+  border-radius: 2px;
   margin-bottom: 10px;
   margin-top: 5px;
   padding: 5px;
@@ -48,12 +48,33 @@ input, textarea:focus {
 }
 
 #sendBtn {
-  background: #696969;
+  background: #0471A6;
   color: #fff;
   font-size: 20px;
   margin: 1rem 0;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
 }
 
 #sendBtn:hover {
   background: #595959;
+}
+
+#headerNumber {
+  background: #0471A6;
+  color: #fff;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  align-self: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#headerText {
+  margin: 0px;
+  padding-left: 10px;
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #464646;
 }

@@ -19,12 +19,16 @@ function Nav() {
       <h3><Link to="/" style={homeLinkStyle}>Events and Ticket Saas</Link></h3>
 
       <ul className="nav-links">
-        <Link style={navStyle} to="/create_event">
+        <Link style={navStyle} to="/create">
           <li>New Event</li>
         </Link>
 
         <Link style={navStyle} to="/ticket_wallet">
           <li>Events and Tickets</li>
+        </Link>
+
+        <Link style={navStyle} to="/ticket_wallet">
+          <li>Profile</li>
         </Link>
       </ul>
 

@@ -14,8 +14,13 @@ const styles = {
     // marginLeft: '.5em',
   },
   headerContainer: {
-    borderWidth: '2px 3px',
-    borderColor: '#000',
+    display: 'flex',
+    border: '1px solid #898989',
+    borderLeftWidth: '0px',
+    borderRightWidth: '0px',
+    borderTopWidth: '0px',
+    padding: '0px',
+    maxWidth: '80%'
   },
   formContainer: {
     // margin: '2em'
@@ -25,7 +30,7 @@ const styles = {
     // alignSelf: 'flex-start'
   },
   block: {
-    margin: "2em 2em 2em 5em",
+    margin: "2em 2em 2em 10em",
   },
 }
 
@@ -47,7 +52,8 @@ function CreateEvent() {
   return (
     <div style={block}>
       <div style={headerContainer}>
-        <h2 style={header}>Create Event</h2>
+        <h2 id="headerNumber">1</h2>
+        <h2 id="headerText" style={header}>Create Event</h2>
       </div>
 
       <div>
@@ -61,7 +67,7 @@ function CreateEvent() {
           <label for="description">Event Description</label>
           <textarea id="description" placeholder="Include need-to-know information"></textarea>
 
-          <input type="submit" value="Save" id="sendBtn"/>
+          <input type="submit" value="SAVE" id="sendBtn"/>
         </form>
         
       </div>

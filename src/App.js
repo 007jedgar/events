@@ -36,7 +36,7 @@ function App() {
 
           <Switch>
             <Route path="/" exact component={Home}/>
-            <Route path="/create_event" component={CreateEvent}/>
+            <Route path="/create" component={CreateEvent}/>
             <Route path="/ticket_wallet" exact component={TicketWallet}/>
             <Route path="/ticket/:id" exact component={EventDetail}/>
             <Route path="/shop/:id" component={ItemDetail}/>
