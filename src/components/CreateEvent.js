@@ -10,19 +10,23 @@ import {
 
 const styles = {
   header: {
-    textAlign: 'start',
-    marginLeft: '.5em',
+    // textAlign: 'start',
+    // marginLeft: '.5em',
   },
   headerContainer: {
     borderWidth: '2px 3px',
     borderColor: '#000',
   },
   formContainer: {
-    margin: '2em'
+    // margin: '2em'
   },
   label: {
-    textAlign: 'start'
-  }
+    // textAlign: 'start',
+    // alignSelf: 'flex-start'
+  },
+  block: {
+    margin: "2em 2em 2em 5em",
+  },
 }
 
 function CreateEvent() {
@@ -39,28 +43,27 @@ function CreateEvent() {
     }
   }, []);
 
-  const { header, headerContainer, formContainer, label } = styles
+  const { block, header, headerContainer, formContainer, label } = styles
   return (
-    <div >
+    <div style={block}>
       <div style={headerContainer}>
         <h2 style={header}>Create Event</h2>
       </div>
 
-      <div style={formContainer}>
-        <Form >
-          <FormGroup>
-            <label className="form-label" htmlFor="#title">Event Title</label>
-            <FormInput id="#title" autocomplete={false} placeholder="Give a short distinct name" />
-          </FormGroup>
+      <div>
+        <form className="event-form">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title"placeholder="Give it a short and distinct name" />
 
-          <FormGroup>
-            <label htmlFor="#location">Location</label>
-            <FormInput id="#location" placeholder="Search for a venue or address" />
-          </FormGroup>
-        </Form>
-        <div>
+          <label  for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Search for a venue or address"/>   
 
-        </div>
+          <label for="description">Event Description</label>
+          <textarea id="description" placeholder="Include need-to-know information"></textarea>
+
+          <input type="submit" value="Save" id="sendBtn"/>
+        </form>
+        
       </div>
       
     </div>

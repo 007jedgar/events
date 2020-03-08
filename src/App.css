@@ -19,15 +19,41 @@ nav {
   list-style: none;
 }
 
+.event-form {
+  max-width: 500px;
+  margin: 5em auto;
+}
+
+.event-form, label {
+  text-align: start;
+  font-size: 17px;
+}
+
+.event-form > input, textarea {
+  width: 100%;
+  border: 1px solid #898989;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+input, textarea:focus {
+  border-color: dodgerblue;
+}
 
 .header {
   text-align: start;
 }
 
-.form-label {
-  text-align: start;
+#sendBtn {
+  background: #696969;
+  color: #fff;
+  font-size: 20px;
+  margin: 1rem 0;
 }
 
-GooglePlacesAutocomplete {
-  border-radius: 20px;
+#sendBtn:hover {
+  background: #595959;
 }

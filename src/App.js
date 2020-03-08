@@ -19,9 +19,6 @@ import ReduxThunk from 'redux-thunk';
 import logger from 'redux-logger'
 
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
-
 function App() {
   const store = createStore(
     reducers, 
