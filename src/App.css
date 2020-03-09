@@ -57,7 +57,7 @@ input, textarea:focus {
 }
 
 #sendBtn:hover {
-  background: #595959;
+  background: rgb(3, 94, 139);
 }
 
 #headerNumber {

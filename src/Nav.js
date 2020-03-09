@@ -23,11 +23,11 @@ function Nav() {
           <li>New Event</li>
         </Link>
 
-        <Link style={navStyle} to="/ticket_wallet">
+        <Link style={navStyle} to="/tickets">
           <li>Events and Tickets</li>
         </Link>
 
-        <Link style={navStyle} to="/ticket_wallet">
+        <Link style={navStyle} to="/profile">
           <li>Profile</li>
         </Link>
       </ul>

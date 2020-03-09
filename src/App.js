@@ -5,7 +5,8 @@ import ItemDetail from './ItemDetail'
 import Home from './components/Home'
 import EventDetail from './components/CreateEvent'
 import CreateEvent from './components/CreateEvent'
-import TicketWallet from './components/TicketWallet'
+import Tickets from './components/Tickets'
+import Profile from './components/Profile'
 import Error404 from './errors/Error404'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux';
@@ -37,7 +38,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home}/>
             <Route path="/create" component={CreateEvent}/>
-            <Route path="/ticket_wallet" exact component={TicketWallet}/>
+            <Route path="/tickets" exact component={Tickets}/>
+            <Route path="/profile" exact component={Profile}/>
             <Route path="/ticket/:id" exact component={EventDetail}/>
             <Route path="/shop/:id" component={ItemDetail}/>
             <Route component={Error404} />

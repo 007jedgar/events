@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './../App.css';
-import { Form, FormInput, FormGroup } from "shards-react";
-import Autocomplete from 'react-google-autocomplete';
-import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+// import { Form, FormInput, FormGroup } from "shards-react";
+// import Autocomplete from 'react-google-autocomplete';
+// import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { connect } from 'react-redux';
 import {
   createEvent
@@ -67,10 +67,25 @@ function CreateEvent() {
           <label for="description">Event Description</label>
           <textarea id="description" placeholder="Include need-to-know information"></textarea>
 
-          <input type="submit" value="SAVE" id="sendBtn"/>
         </form>
         
       </div>
+
+      <div style={headerContainer}>
+        <h2 id="headerNumber">2</h2>
+        <h2 id="headerText" style={header}>Create Tickets</h2>
+      </div>
+
+      <div style={headerContainer}>
+        <h2 id="headerNumber">3</h2>
+        <h2 id="headerText" style={header}>Payment Provider(s)</h2>
+      </div>      
+
+      <div style={headerContainer}>
+        <h2 id="headerNumber">4</h2>
+        <h2 id="headerText" style={header}>Additional Settings</h2>
+      </div>
+      
       
     </div>
   )
