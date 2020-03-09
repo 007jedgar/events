@@ -1,13 +1,17 @@
 import {
-  LOGIN_USER
+  SAVE_EVENT
 } from '../actions/types';
-const INITAL_STATE = {}
+const INITAL_STATE = {
+  event: {},
+  loading: false,
+  error: {},
+}
 
 export default (state = INITAL_STATE, action) => {
 
   switch (action.type) {
-    case LOGIN_USER:
-      return { ...state, loading: true, error: '' }
+    case SAVE_EVENT:
+      return { ...state, event: action.payload }
     default:
       return state;
   }

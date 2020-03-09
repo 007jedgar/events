@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './../App.css';
-import { Link } from 'react-router-dom'
 
 function Error404() {
-
   return (
     <div>
       <h1>Error 404</h1>

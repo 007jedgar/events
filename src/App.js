@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Nav from './Nav'
-import ItemDetail from './ItemDetail'
 import Home from './components/Home'
 import EventDetail from './components/CreateEvent'
 import CreateEvent from './components/CreateEvent'
@@ -41,7 +40,6 @@ function App() {
             <Route path="/tickets" exact component={Tickets}/>
             <Route path="/profile" exact component={Profile}/>
             <Route path="/ticket/:id" exact component={EventDetail}/>
-            <Route path="/shop/:id" component={ItemDetail}/>
             <Route component={Error404} />
           </Switch>
       

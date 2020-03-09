@@ -1,5 +1,6 @@
 import {
-  CREATE_EVENT
+  CREATE_EVENT,
+  SAVE_EVENT
 } from './types'
 import firebase from 'firebase'
 
@@ -17,5 +18,12 @@ export const createEvent = (event) => {
         paylaod: err
       })
     })
+  }
+}
+
+export const saveEvent = (event) => {
+  return (dispatch) => {
+
+    dispatch({ type: SAVE_EVENT, payload: event})
   }
 }

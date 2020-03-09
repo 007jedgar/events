@@ -47,6 +47,28 @@ input, textarea:focus {
   text-align: start;
 }
 
+.timeForm {
+
+}
+
+.img-form {
+  /* width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 18px; */
+}
+
+.img-form > input {
+  width: 100%;
+  border: 1px solid #898989;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
 #sendBtn {
   background: #0471A6;
   color: #fff;
@@ -77,4 +99,30 @@ input, textarea:focus {
   align-self: center;
   font-family: 'Montserrat', sans-serif;
   color: #464646;
+}
+
+#timeLabel {
+  /* margin-right: 5px; */
+  width: '10%';
+}
+
+#timeInput {
+  width: 40%;
+  border: 1px solid #898989;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+GooglePlacesAutocomplete {
+  width: 100%;
+  border: 1px solid #898989;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 18px; 
 }
