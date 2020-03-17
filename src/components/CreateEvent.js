@@ -58,6 +58,14 @@ function CreateEvent() {
     toggleDatePicker(true)
   }
 
+  const parseDate = () => {
+    
+  }
+  
+  const onAddressSelected = () => {
+    
+  }
+  
   const saveEvent = () => {
     let newEvent  = {
       ...event
@@ -65,7 +73,6 @@ function CreateEvent() {
     updateEvent(newEvent)
   }
   
-
   const { block, header, headerContainer, autocompleteInput } = styles
   return (
     <div style={block}>
@@ -88,7 +95,7 @@ function CreateEvent() {
               name="location"
               inputStyle={autocompleteInput}
               placeholder="Search for a venue or address"
-              
+              onSelect={(des) => this.onAddressSelected(des)}
             />
           </div>
 
